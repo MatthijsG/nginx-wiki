@@ -70,6 +70,7 @@ Recipe
             include fastcgi_params;
             fastcgi_param SCRIPT_FILENAME $request_filename;
             fastcgi_intercept_errors on;
+            #NOTE: If site is not working (402) check this path
             fastcgi_pass unix:/tmp/phpfpm.sock;
         }
 
